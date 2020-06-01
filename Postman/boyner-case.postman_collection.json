@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "4d8d728f-21b7-4cac-98b3-fd1998fb1326",
+		"name": "boyner-case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://purenotificationsystemapi.azurewebsites.net/api/pushmessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"TextMessage\":\"merhaba bu bir push mesajıdır.\",\n\t\"DeviceToken\":\"denemetoken\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://purenotificationsystemapi.azurewebsites.net/api/pushmessage",
+					"protocol": "https",
+					"host": [
+						"purenotificationsystemapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"pushmessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://purenotificationsystemapi.azurewebsites.net/api/pushmessage/denemetoken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://purenotificationsystemapi.azurewebsites.net/api/pushmessage/denemetoken",
+					"protocol": "https",
+					"host": [
+						"purenotificationsystemapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"pushmessage",
+						"denemetoken"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

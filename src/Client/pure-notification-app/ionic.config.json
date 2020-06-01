@@ -1,0 +1,8 @@
+{
+  "name": "pure-notification-app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

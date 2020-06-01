@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Message List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p *ngIf="isFetching">Fetching messages.</p>
+  <!-- <p *ngFor="let item of messageList">{{item.textMessage}}<p> -->
+
+  <ion-list *ngIf="!isFetching">
+    <ion-list-header>
+      Notifications
+    </ion-list-header>
+    <li ion-item *ngFor="let message of messageList">
+      {{ message.textMessage }}
+    </li>
+  </ion-list>
+</ion-content>
